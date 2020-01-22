@@ -1,0 +1,26 @@
+/*
+Theme Name: Studclub Vgsha
+Author: BuzmakovVI
+Description: Studclub_Vgsha theme for studclub landing
+Version: 0.1.0
+Text Domain: studclub-vgsha
+*/
+
+@import "./utils/mixin";
+
+/* base */
+@import "./base/colors";
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/grid";
+@import "./base/common";
+
+/* layout */
+@import "./layout/header";
+@import "./layout/about";
+@import "./layout/footer";
+
+/* components */
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/copyright";

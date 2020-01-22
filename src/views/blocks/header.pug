@@ -1,0 +1,17 @@
+mixin menu-item(text)
+  li.Menu-Item
+    a.Menu-Link.Menu-Link_Active.Text_Uppercase(href="#")= text
+
+header.Header-Outer.Container
+  .Header.Block.No-Gutters
+    .Logo.ColLg4
+      img.Logo-Img(src="/images/logo.png", alt="студклуб логотип")
+    nav.Nav.ColLg8
+      span.MobileMenu-Button
+        span ICON MENU
+        //i.fas.fa-bars
+      ul.Menu
+        +menu-item("О нас")
+        +menu-item("Афиша")
+        +menu-item("ФОточки")
+        +menu-item("Контакты")
