@@ -22,7 +22,8 @@ const stylePath = [normalizeCss, scssIn];
 const scssOut = "./build/css";
 const jsIn = "./src/js/*.js";
 const jsOut = "./build/js";
-const pugIn = "./src/views/*.pug";
+const pugIn = "src/views/*.pug";
+const pugWatch = "src/views/**/*.pug";
 const pugOut = "./build";
 const imageIn = "./src/images/*";
 const imageOut = "./build/images";
@@ -97,7 +98,7 @@ function watch() {
 
   gulp.watch(scssIn, styles);
   gulp.watch(jsIn, scripts);
-  gulp.watch(pugIn, html);
+  gulp.watch(pugWatch, html);
 }
 
 gulp.task("styles", styles);
