@@ -1,0 +1,75 @@
+.Event {
+  position: relative;
+
+  &-Padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &-Link {
+    color: $primary-text;
+  }
+
+  &-Title,
+  &-Text,
+  &-Readmore {
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-Title {
+    font-size: 1.4rem;
+    top: 10%;
+  }
+
+  &-Text {
+    top: 32%;
+  }
+
+  &-Readmore {
+    bottom: 30px;
+  }
+
+  &-Readmore,
+  &-Text {
+    font-size: 1.15rem;
+  }
+
+  &-Img {
+    max-width: 430px;
+    max-height: 600px;
+  }
+
+  &-Slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: $secondary-accent-1;
+    cursor: pointer;
+
+    & > img {
+      position: relative;
+      width: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &_Left {
+      transform: translateX(-50%);
+    }
+
+    &_Right {
+      right: 0;
+      transform: translateX(50%);
+
+      & > img {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+mixin single_event(title, text, imgSrc)
+  .Event.Events-Single.Text_Center
+    a.Event-Link(href="#")
+      p.Event-Title.Event_Padding= title
+      p.Event-Text.Event_Padding= text
+      p.Event-Readmore.Event_Padding Подробнее
+      img.Event-Img(src=imgSrc, alt=title)
+
+section.Container.Section.Section_First
+  h3.Section-Title.Text_Uppercase АФИША
+  .Events.Block.No-Gutters.Block_SpaceBetween
+    +single_event("Пир во время чумы", "Так немножко прошёлся, думал, не пройдёт ли аппетит — нет, чёрт возьми, не проходит.", "./images/afisha_bg1.jpg")
+    +single_event("Вот те два", "Я пригласил вас, господа, с тем, чтобы сообщить вам пренеприятное известие: к нам едет ревизор", "./images/afisha_bg2.jpg")
+    +single_event("Запуск корабликов в ручейке", "Большому кораблю — большое плавание!", "./images/afisha_bg3.jpg")
+    +single_event("Dance-Dance!", "Уж и вы! Не нашли другого места упасть! И растянулся, как чёрт знает что такое.", "./images/afisha_bg4.jpg")
+    .Event-Slider.Event-Slider_Left.Text_Center
+      img(src="./images/slideto.png" alt="slide to left")
+    .Event-Slider.Event-Slider_Right.Text_Center
+      img(src="./images/slideto.png" alt="slide to right")

@@ -1,0 +1,37 @@
+.Socials {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  &-Wrapper {
+    max-width: 60px;
+    max-height: 60px;
+    margin-right: 10px;
+    border-radius: 100%;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_VK:hover {
+      background-color: $vk_bg;
+    }
+    &_FB:hover {
+      background-color: $facebook_bg;
+    }
+    &_IN:hover {
+      background-color: $instagram_bg;
+    }
+    &_YT:hover {
+      background-color: $youtube_bg;
+    }
+    &_TW:hover {
+      background-color: $twitter_bg;
+    }
+  }
+}
