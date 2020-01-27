@@ -6,7 +6,7 @@ mixin single_event(title, text, imgSrc)
       p.Event-Readmore.Event_Padding Подробнее
       img.Event-Img(src=imgSrc, alt=title)
 
-section.Container.Section.Section_First
+section#Events.Container.Section.Section_First
   h3.Section-Title.Text_Uppercase АФИША
   .Events.Block.No-Gutters.Block_SpaceBetween
     +single_event("Пир во время чумы", "Так немножко прошёлся, думал, не пройдёт ли аппетит — нет, чёрт возьми, не проходит.", "./images/afisha_bg1.jpg")

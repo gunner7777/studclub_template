@@ -8,4 +8,16 @@
     background-color: transparent;
     z-index: 2;
   }
+
+  &_Fixed {
+    background-color: $secondary-black;
+
+    & > .Header {
+      height: 70px;
+    }
+
+    & .Logo-Img {
+      width: 168px;
+    }
+  }
 }
